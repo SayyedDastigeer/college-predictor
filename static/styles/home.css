@@ -1,0 +1,259 @@
+
+.nav-logo{
+  height: 50px;
+  width: 40px;
+
+}
+.logo{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+}
+
+
+/* Styling for the green boxes */
+.hero {
+    margin: auto;
+    margin-top: 15px;
+    height: 500px;
+    width: 90%;
+    background-color: #44BEE3;
+    color: white;
+    display: flex;
+}
+.cllg-icon {
+    height: 40px;
+    width: 40px;
+    background-image: url("coll.png");
+    background-size: cover;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.header {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: x-large;
+}
+.underline {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 10px auto;
+}
+.text-header {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 10px;
+    font-size: x-large;
+}
+.green-box-section {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    margin-top: 250px;
+    margin-left: 300px;
+}
+.green-box {
+    background-color: #055d8d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    flex: 1;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+.green-box:hover {
+    background-color: #001841;
+}
+.green-box h3 {
+    font-size: 18px;
+    margin: 0;
+}
+.green-box:hover h3 {
+    color: #f0f0f0;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: black;
+    width: 500px;
+}
+.content-heading {
+    font-size: xx-large;
+}
+.content-para {
+    width: 450px;
+    font-size: larger;
+}
+.content-image {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 750px;
+}
+.cnt-img {
+    background-image: url("hero1.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* IIT & MHT-CET Colleges */
+.iit-box {
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.iit-head {
+    display: flex;
+    justify-content: center;
+    margin-top: 177px;
+}
+.college-grid {
+    height: 300px;
+    width: 500px;
+}
+.college-item1, .college-item2, .college-item3, .college-item4 {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.college-item1 {
+    background-image: url("iit-bombay.jpg");
+}
+.college-item2 {
+    background-image: url("iit-delhi.jpg");
+}
+.college-item3 {
+    background-image: url("college-of-engineering-pune 1.png");
+}
+.college-item4 {
+    background-image: url("vjti 1.png");
+}
+.iit-box a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.iit-box a:hover {
+    text-decoration: underline;
+}
+.college-box {
+    display: flex;
+    flex-direction: row;
+}
+.college-grid {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.clicktext {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+.visit {
+    height: 40px;
+    width: 110px;
+    background-color: #A1E866;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.visit a {
+    text-decoration: none;
+    color: black;
+}
+.visit:hover {
+    background-color: #58c400;
+}
+.vstbtn {
+    display: flex;
+    justify-content: center;
+}
+/* Footer Styling */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}
+

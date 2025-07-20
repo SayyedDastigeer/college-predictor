@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/mhtcet/form.css') }}">
+    <title>MHT-CET College Selection Form</title>
+</head>
+<body>
+    <h1>Enter Your Percentile</h1>
+    <form method="POST" action="{{ url_for('mht_cet.form') }}">
+        <label for="percentile">Percentile:</label>
+        <input type="number" id="percentile" name="percentile" step="0.01" min="0" max="100" required>
+        
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="ALL">All</option>
+            <option value="GOPEN">GOPEN</option>
+            <option value="GSC">GSC</option>
+            <option value="GNTD">GNTD</option>
+            <option value="GOBC">GOBC</option>
+            <option value="LOPEN">LOPEN</option>
+            <option value="LST">LST</option>
+            <option value="EWS">EWS</option>
+            <option value="GNTC">GNTC</option>
+            <option value="LOBC">LOBC</option>
+            <option value="GST">GST</option>
+            <option value="LSC">LSC</option>
+            <option value="LNTD">LNTD</option>
+            <option value="LNTA">LNTA</option>
+            <option value="GNTA">GNTA</option>
+            <option value="LNTC">LNTC</option>
+            <option value="PWD-O">PWD-O</option>
+            <option value="DEF-O">DEF-O</option>
+            <option value="GNTB">GNTB</option>
+            <option value="PWDR-ST">PWDR-ST</option>
+            <option value="LNTB">LNTB</option>
+            <option value="MI">MI</option>
+            <option value="DEFR-OBC">DEFR-OBC</option>
+            <option value="ORP">ORP</option>
+            <option value="DEFR-NTC">DEFR-NTC</option>
+            <option value="PWDR-OBC">PWDR-OBC</option>
+            <option value="DEFR-SC">DEFR-SC</option>
+            <option value="PWDR-SC">PWDR-SC</option>
+        </select>
+
+        <label for="course">Course Name:</label>
+        <select id="course" name="course" required>
+            <option value="ALL">All</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Electronics and Telecommunication Engineering">Electronics and Telecommunication Engineering</option>
+            <option value="Instrumentation Engineering">Instrumentation Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Food Technology">Food Technology</option>
+            <option value="Oil and Paints Technology">Oil and Paints Technology</option>
+            <option value="Paper and Pulp Technology">Paper and Pulp Technology</option>
+            <option value="Petro Chemical Engineering">Petro Chemical Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Electrical Engineering (Electronics and Power)">Electrical Engineering (Electronics and Power)</option>
+            <option value="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Textile Engineering / Technology">Textile Engineering / Technology</option>
+            <option value="Production Engineering">Production Engineering</option>
+            <option value="Textile Technology">Textile Technology</option>
+            <option value="Pharmaceutical and Fine Chemical Technology">Pharmaceutical and Fine Chemical Technology</option>
+            <option value="Electronics and Computer Engineering">Electronics and Computer Engineering</option>
+            <option value="Agricultural Engineering">Agricultural Engineering</option>
+            <option value="Plastic and Polymer Engineering">Plastic and Polymer Engineering</option>
+            <option value="Computer Science and Engineering (Artificial Intelligence and Machine Learning)">Computer Science and Engineering (Artificial Intelligence and Machine Learning)</option>
+            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+            <option value="Artificial Intelligence (AI) and Data Science">Artificial Intelligence (AI) and Data Science</option>
+            <option value="Electrical Engineering (Electrical and Power)">Electrical Engineering (Electrical and Power)</option>
+            <option value="Electronics Engineering">Electronics Engineering</option>
+            <option value="Food Engineering and Technology">Food Engineering and Technology</option>
+            <option value="Safety and Fire Engineering">Safety and Fire Engineering</option>
+            <option value="Production Engineering (Sandwich)">Production Engineering (Sandwich)</option>
+            <option value="Computer Science and Technology">Computer Science and Technology</option>
+            <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Food Technology and Management">Food Technology and Management</option>
+            <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+            <option value="Civil and Infrastructure Engineering">Civil and Infrastructure Engineering</option>
+            <option value="Biomedical Engineering">Biomedical Engineering</option>
+            <option value="Computer Science and Engineering (IoT and Cyber Security including Blockchain Technology)">Computer Science and Engineering (IoT and Cyber Security including Blockchain Technology)</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="Electronics and Computer Science">Electronics and Computer Science</option>
+            <option value="Automobile Engineering">Automobile Engineering</option>
+            <option value="Computer Science and Engineering (Data Science)">Computer Science and Engineering (Data Science)</option>
+            <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
+            <option value="Mechanical and Mechatronics Engineering (Additive Manufacturing)">Mechanical and Mechatronics Engineering (Additive Manufacturing)</option>
+            <option value="Computer Science and Engineering (Cyber Security)">Computer Science and Engineering (Cyber Security)</option>
+            <option value="Artificial Intelligence and Machine Learning">Artificial Intelligence and Machine Learning</option>
+            <option value="Automation and Robotics">Automation and Robotics</option>
+            <option value="Data Engineering">Data Engineering</option>
+            <option value="Computer Science and Design">Computer Science and Design</option>
+            <option value="Plastic and Polymer Technology">Plastic and Polymer Technology</option>
+            <option value="Petro Chemical Technology">Petro Chemical Technology</option>
+            <option value="Oil Technology">Oil Technology</option>
+            <option value="Surface Coating Technology">Surface Coating Technology</option>
+            <option value="Computer Technology">Computer Technology</option>
+            <option value="Industrial Engineering">Industrial Engineering</option>
+            <option value="Computer Science and Engineering (Cyber Security)">Computer Science and Engineering (Cyber Security)</option>
+            <option value="Computer Science and Engineering (IoT)">Computer Science and Engineering (IoT)</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+            <option value="Industrial IoT">Industrial IoT</option>
+            <option value="Robotics and Artificial Intelligence">Robotics and Artificial Intelligence</option>
+            <option value="Biotechnology">Biotechnology</option>
+            <option value="Mining Engineering">Mining Engineering</option>
+            <option value="Plastic Technology">Plastic Technology</option>
+            <option value="Oil Fats and Waxes Technology">Oil Fats and Waxes Technology</option>
+            <option value="Paints Technology">Paints Technology</option>
+            <option value="Instrumentation and Control Engineering">Instrumentation and Control Engineering</option>
+            <option value="Robotics and Automation">Robotics and Automation</option>
+            <option value="Structural Engineering">Structural Engineering</option>
+            <option value="Mechanical Engineering (Sandwich)">Mechanical Engineering (Sandwich)</option>
+            <option value="Civil and Environmental Engineering">Civil and Environmental Engineering</option>
+            <option value="Manufacturing Science and Engineering">Manufacturing Science and Engineering</option>
+            <option value="Metallurgy and Material Technology">Metallurgy and Material Technology</option>
+            <option value="Computer Science and Business Systems">Computer Science and Business Systems</option>
+            <option value="Computer Science and Engineering (Artificial Intelligence)">Computer Science and Engineering (Artificial Intelligence)</option>
+            <option value="Computer Engineering (Regional Language)">Computer Engineering (Regional Language)</option>
+            <option value="Automotive Technology">Automotive Technology</option>
+            <option value="Computer Science and Information Technology">Computer Science and Information Technology</option>
+            <option value="Fashion Technology">Fashion Technology</option>
+            <option value="Man-Made Textile Technology">Man-Made Textile Technology</option>
+            <option value="Textile Chemistry">Textile Chemistry</option>
+            <option value="Textile Plant Engineering">Textile Plant Engineering</option>
+            <option value="Mechanical and Automation Engineering">Mechanical and Automation Engineering</option>
+            <option value="Computer Science and Engineering (AI and Data Science)">Computer Science and Engineering (AI and Data Science)</option>
+            <option value="Printing Technology">Printing Technology</option>
+            <option value="Electronics and Telecommunication Engineering (Technician Electronic Radio)">Electronics and Telecommunication Engineering (Technician Electronic Radio)</option>
+            <option value="Electronics Engineering (VLSI Design and Technology)">Electronics Engineering (VLSI Design and Technology)</option>
+            <option value="Robotics">Robotics</option>
+            <option value="Electrical and Computer Engineering">Electrical and Computer Engineering</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

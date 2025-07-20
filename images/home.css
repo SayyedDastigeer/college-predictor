@@ -1,0 +1,137 @@
+/* Styling for the green boxes */
+.green-box-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.green-box {
+  background-color: #8bc34a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  flex: 1;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.green-box:hover {
+  background-color: #7cb342;
+}
+
+.green-box h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.green-box:hover h3 {
+  color: #f0f0f0;
+}
+
+/* Existing hero-section and college grid styles */
+.hero-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.college-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.college-item {
+  text-align: center;
+}
+
+.college-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}
+
