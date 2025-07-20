@@ -1,3 +1,4 @@
+# 🚀 Flask-based Web App with Machine Learning to Predict College Admission Chances using JEE and MHT-CET scores.
 
 # 🎓 College Predictor for MHT-CET and JEE (Flask + ML)
 
